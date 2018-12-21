@@ -31,7 +31,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
 
     // ViewModel and LiveData
-//    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
-//    implementation "androidx.lifecycle:lifecycle-reactivestreams:2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:2.0.0"
 
 }
