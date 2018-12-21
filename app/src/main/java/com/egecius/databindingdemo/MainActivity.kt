@@ -1,14 +1,14 @@
 package com.egecius.databindingdemo
 
 import android.databinding.DataBindingUtil
-import android.databinding.ObservableInt
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.widget.Button
 import com.egecius.databindingdemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    val user = User("My first name", "My last name")
 
     lateinit var binding: ActivityMainBinding
 
@@ -18,18 +18,15 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.user = User("My first name", "My last name")
+        binding.user = user
 
         setupButton()
     }
 
     private fun setupButton() {
         findViewById<Button>(R.id.increment_button).setOnClickListener {
-
-            val counter: ObservableInt? = binding.user?.counter
-            counter?.set(counter.get() + 1)
-
-            Log.i("Eg:MainActivity:30", "setupButton counter.get() " + counter?.get())
+            val counter = user.counter
+            counter.set(counter.get() + 1)
         }
     }
 }
