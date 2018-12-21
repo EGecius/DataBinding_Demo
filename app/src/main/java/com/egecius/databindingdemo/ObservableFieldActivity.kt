@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import com.egecius.databindingdemo.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class ObservableFieldActivity : AppCompatActivity() {
 
     private val user = User("My first name", "My last name")
 
