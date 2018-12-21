@@ -32,10 +32,11 @@
                 android:text="increment!"/>
 
 
-        <!--android:text="@{user.counter}"-->
+        <!-- you have to convert it to String. Alternatively, you can create ObservableString -->
         <TextView
                 android:id="@+id/counter"
                 android:textSize="24sp"
+                android:text="@{Integer.toString(user.counter)}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
