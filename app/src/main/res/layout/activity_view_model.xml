@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-            android:text="View Model Activity"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 
-</LinearLayout>
+    <data>
+        <variable name="view_model" type="com.egecius.databindingdemo.MyViewModel"/>
+    </data>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+
+        <Button
+                android:text="Increment!"
+                android:id="@+id/increment_button"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>
