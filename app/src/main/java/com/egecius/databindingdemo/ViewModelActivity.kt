@@ -1,8 +1,8 @@
 package com.egecius.databindingdemo
 
-import android.databinding.DataBindingUtil
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.egecius.databindingdemo.databinding.ActivityViewModelBinding
 
 

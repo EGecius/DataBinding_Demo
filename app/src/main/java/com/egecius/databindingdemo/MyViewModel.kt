@@ -1,6 +1,6 @@
 package com.egecius.databindingdemo
 
-import android.databinding.ObservableField
+import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
 
 class MyViewModel : ViewModel() {

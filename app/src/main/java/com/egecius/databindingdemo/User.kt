@@ -1,6 +1,6 @@
 package com.egecius.databindingdemo
 
-import android.databinding.ObservableInt
+import androidx.databinding.ObservableInt
 
 
 data class User(val firstName: String, val lastName: String) {
