@@ -2,8 +2,9 @@ package com.egecius.databindingdemo
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.egecius.databindingdemo.databinding.ActivityViewModelBinding
+
 
 class ViewModelActivity : AppCompatActivity() {
 
@@ -11,10 +12,10 @@ class ViewModelActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_model)
 
-//        ViewModelProviders
+//        val viewModel = ViewModelProviders.of(this).get(MyViewModel::class.java)
 
         val binding : ActivityViewModelBinding = DataBindingUtil.setContentView(this, R.layout.activity_view_model)
-//        binding.viewModel =
+//        binding.viewModel = viewModel
     }
 
 }

@@ -2,9 +2,10 @@ package com.egecius.databindingdemo
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.egecius.databindingdemo.databinding.ActivityMainBinding
+
 
 class ObservableFieldActivity : AppCompatActivity() {
 
