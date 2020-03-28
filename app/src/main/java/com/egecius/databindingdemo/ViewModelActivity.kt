@@ -16,6 +16,6 @@ class ViewModelActivity : AppCompatActivity() {
 
         val binding : ActivityViewModelBinding = DataBindingUtil.setContentView(this, R.layout.activity_view_model)
         binding.viewModel = viewModel
+        binding.myString = "Egis set from a variable outside of ViewModel"
     }
-
 }

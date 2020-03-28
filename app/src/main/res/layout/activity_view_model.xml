@@ -7,6 +7,10 @@
         <variable
                 name="view_model"
                 type="com.egecius.databindingdemo.MyViewModel" />
+
+        <variable
+                name="myString"
+                type="String" />
     </data>
 
     <LinearLayout
@@ -14,6 +18,13 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:text="@{myString}"
+                android:layout_height="wrap_content"
+                tools:text="Set from a variable outside ViewModel" />
+
 
         <TextView
                 android:layout_width="wrap_content"
